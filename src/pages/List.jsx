@@ -30,6 +30,7 @@ function List() {
     axios
       .delete(`http://localhost:3031/projects/${projectId}`)
       .catch((err) => console.error(err));
+      getProjects();
   };
 
   const handleFilterChange = (event) => {
@@ -46,7 +47,7 @@ function List() {
 
   useEffect(() => {
     getProjects();
-  }, [deleteProject]);
+  }, []);
 
   return (
     <div className="w-11/12 lg:w-3/4 m-auto relative">
