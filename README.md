@@ -1,7 +1,8 @@
 ### Lancer le projet
-1. npm install -g json-server (si necessaire)
-2. json-server --watch db.json --port 3031
-3. npm start
+1. npm install
+2. npm install -g json-server (si necessaire)
+3. json-server --watch db.json --port 3031
+4. npm start
 
 ### Lancer les tests
 npm test
